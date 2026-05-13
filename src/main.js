@@ -1,3 +1,6 @@
+import "./style.css";
+
+// get background image from Unsplash API
 fetch(
   "https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature",
 )
@@ -13,6 +16,7 @@ fetch(
     document.getElementById("author").textContent = `By: Dodi Achmad`;
   });
 
+// get crypto info from CoinGecko API
 fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
   .then((res) => {
     if (!res.ok) {
@@ -33,3 +37,14 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
         `;
   })
   .catch((err) => console.error(err));
+
+// get current time
+function renderTime() {
+  const date = new Date();
+  document.querySelector(".time").textContent = date.toLocaleTimeString(
+    "en-us",
+    { timeStyle: "short" },
+  );
+}
+
+setInterval(renderTime, 1000);
