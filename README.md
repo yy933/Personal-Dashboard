@@ -12,7 +12,7 @@ A custom Chrome "New Tab" override extension designed to provide a minimalist, a
 
 - **Minimalist UI**: Clean, glassmorphism-inspired design with focused typography.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
 
 - **Tooling**: Vite (Build tool & Dev server)
